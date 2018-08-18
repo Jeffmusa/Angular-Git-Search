@@ -1,11 +1,13 @@
 <div class="head">
-  <input type="text" placeholder="Search here..." name="" value=""><button type="submit" name="button">SEARCH</button>
+  <input type="text" placeholder="Search here..." name="input" #input value="">
+
+  <input type="button" (click)='search(input)' value="search">
 </div>
 
 
-<!-- <app-landing></app-landing> -->
+ <!-- <app-landing></app-landing> -->
 
-<!-- <div class="card" >
+ <div class="card" >
   <div class="card-header">
 
   </div>
@@ -13,4 +15,11 @@
 <div class="card-footer">
 
 </div>
-</div> -->
+</div>
+
+{{user$.login}}
+<img src="{{user$.avatar_url}}" alt="{{user$.login}}">
+
+{{user$.id}}
+{{result$[0].login}}
+<img src="{{result$[0].avatar_url}}" alt="{{result$.login}}">

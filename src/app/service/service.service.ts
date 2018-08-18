@@ -12,11 +12,12 @@ user$;
 
   }
 
-  getMyInfo() {
-    this.http.get('https://api.github.com/users/jeffmusa');
+  return() {
+    return this.http.get('https://api.github.com/users/jeffmusa');
 
   }
 getUserRepos() {
+  return this.http.get('https://api.github.com/repos/jeffmusa');
 
 }
 
