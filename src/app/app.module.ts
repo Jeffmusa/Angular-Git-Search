@@ -8,19 +8,28 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { LandingComponent } from './landing/landing.component';
 
+import { RouterModule, Routes } from '@angular/router';
 
 
+const routes: Routes = [
+  {path: 'landing', component: LandingComponent},
+  {path: 'search', component: SearchComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    LandingComponent
+    LandingComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
+
+
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

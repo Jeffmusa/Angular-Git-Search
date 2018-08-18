@@ -1,3 +1,13 @@
+
+<!-- <a routerLink='/landing' routerLinkActive='active'>Home</a>
+<a routerLink='/search' routerLinkActive='active'>Search</a>
+<router-outlet></router-outlet>
+ -->
+
+
+
+
+
 <div class="head">
   <input class="input" type="text" placeholder="Search here..." name="input" #input value="">
 
@@ -5,20 +15,27 @@
 </div>
 
 
- <!-- <app-landing></app-landing> -->
 
- <div class="card" >
-  <div class="card-header">
+<div class="panel panel-default">
+  <div class="panel-heading">
+{{user$.name}} <small>({{user$.login}})</small>
+<span class="label label-default">{{user$.public_repos}} Public Repos</span>
+</div>
+<div class="panel-body">
+  .<div class="row">
+    <div class="col-sm-3">
+      <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
 
+    </div>
   </div>
-
-<div class="card-footer">
-
 </div>
 </div>
 
-{{user$.name}}
-<img src="{{user$.avatar_url}}" alt="{{user$.login}}">
+
+
+
+
+
 
 {{user$.id}}
 {{result$[0].login}}
