@@ -1,7 +1,7 @@
 <div class="head">
-  <input type="text" placeholder="Search here..." name="input" #input value="">
+  <input class="input" type="text" placeholder="Search here..." name="input" #input value="">
 
-  <input type="button" (click)='search(input)' value="search">
+  <input  type="button" (click)='search(input)' value="search">
 </div>
 
 
@@ -17,9 +17,10 @@
 </div>
 </div>
 
-{{user$.login}}
+{{user$.name}}
 <img src="{{user$.avatar_url}}" alt="{{user$.login}}">
 
 {{user$.id}}
 {{result$[0].login}}
+  {{repo$[1].name}}
 <img src="{{result$[0].avatar_url}}" alt="{{result$.login}}">

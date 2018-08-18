@@ -6,7 +6,7 @@ import {environment} from '../environments/environment';
   providedIn: 'root'
 })
 export class ServiceService {
-user$;
+
   constructor(public http: HttpClient) {
 
 
@@ -17,7 +17,7 @@ user$;
 
   }
 getUserRepos() {
-  return this.http.get('https://api.github.com/repos/jeffmusa');
+  return this.http.get('https://api.github.com/users/Jeffmusa/repos');
 
 }
 
