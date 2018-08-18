@@ -27,17 +27,11 @@
       <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
 
     </div>
+      <div class="col-sm-5">
+        {{result$[0].login}}
+        {{repo$[1].name}}
+      <img src="{{result$[0].avatar_url}}" class="img-circle img-responsive" alt="{{result$.login}}">
+      </div>
   </div>
 </div>
 </div>
-
-
-
-
-
-
-
-{{user$.id}}
-{{result$[0].login}}
-  {{repo$[1].name}}
-<img src="{{result$[0].avatar_url}}" alt="{{result$.login}}">
