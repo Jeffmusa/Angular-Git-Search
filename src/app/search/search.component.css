@@ -14,3 +14,11 @@ padding: 8px;
 input{
   padding: 8px;
 }
+.click{
+    background-color:#429B8A;
+    color: white;
+}
+.click:hover{
+  background-color:green;
+  cursor: pointer;
+}
