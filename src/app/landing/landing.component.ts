@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { ServiceService } from '../service/service.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public service: ServiceService, private http: HttpClient) {}
+
 
   ngOnInit() {
+    this.service.getMyInfo().subscribe(data => {
+      this.user$ = data;
+      console.log(data);
+    });
+
   }
 
 }
