@@ -1,2 +1,9 @@
-<h2>GEOFREY MUSAU</h2>
-<p>An Angular Application </p>
+<div class="head">
+<input class="input" type="text" placeholder="Search here..." name="input" #input value="">
+
+<input class="click"  type="button" (click)='search(input)' value="search">
+</div>
+
+{{result$[0].login}}
+{{result$[1].name}}
+<img src="{{result$[0].avatar_url}}" class="img-circle img-responsive" alt="{{result$[0].login}}">

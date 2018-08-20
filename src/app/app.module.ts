@@ -13,7 +13,8 @@ import { FindComponent } from './find/find.component';
 
 const routes: Routes = [
   {path: 'find', component: FindComponent},
-  {path: 'search', component: SearchComponent}
+  {path: 'search', component: SearchComponent},
+  {path: '', redirectTo: '/search', pathMatch: 'full'},
 ];
 
 @NgModule({

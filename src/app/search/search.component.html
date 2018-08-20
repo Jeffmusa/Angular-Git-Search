@@ -1,14 +1,10 @@
 
-<div class="head">
-<input class="input" type="text" placeholder="Search here..." name="input" #input value="">
-
-<input class="click"  type="button" (click)='search(input)' value="search">
-</div>
 
 
 
 
-  <h1>{{user$.name}}<small>({{user$.login}})</small></h1>
+
+  <h1>{{user$.name|uppercase}}<small>({{user$.login}})</small></h1>
 
 <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
 
@@ -26,6 +22,4 @@
 
 
 
-      {{result$[0].login}}
-      {{repo$[1].name}}
-    <img src="{{result$[0].avatar_url}}" class="img-circle img-responsive" alt="{{result$.login}}">
+    

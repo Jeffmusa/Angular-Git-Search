@@ -14,15 +14,9 @@ import 'rxjs/add/operator/map';
 
 export class SearchComponent implements OnInit {
   user$;
-  result$;
   repo$;
   constructor(public service: ServiceService, private http: HttpClient ) { }
-  search(input) {
-    this.http.get('https://api.github.com/search/users?q=' + input.value).subscribe(  data => {
-      this.result$ = data.items;
-      console.log(data);
-    });
-  }
+
 
   ngOnInit() {
     this.service.return().subscribe( tempo => {
