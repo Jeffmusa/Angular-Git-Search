@@ -1,14 +1,8 @@
-
-
-
-
-
-
-  <h1>{{user$.name|uppercase}}<small>({{user$.login}})</small></h1>
+<h2>{{user$.name|uppercase}}<small>({{user$.login}})</small></h2>
 
 <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
 
-<h1 style="text-align:center;">PUBLIC REPOSITORIES<small class="label label-default"><em>({{user$.public_repos}} Public Repos.)</em></small></h1>
+<h3 style="text-align:center;">PUBLIC REPOSITORIES<small class="label label-default"><em>({{user$.public_repos}} Public Repos.)</em></small></h3>
 <div class="repos" *ngFor= "let repo of repo$, let i = index">
   <div class="card">
     <div class="card-header">
@@ -19,7 +13,3 @@
 
   <br>
 </div>
-
-
-
-    

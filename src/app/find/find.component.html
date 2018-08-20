@@ -1,9 +1,20 @@
+
+
 <div class="head">
 <input class="input" type="text" placeholder="Search here..." name="input" #input value="">
 
 <input class="click"  type="button" (click)='search(input)' value="search">
 </div>
+<div *ngFor= "let result of result$, let i = index">
+  <div class="card">
+    <div class="card-header bg-secondary text-white" id="header">
+{{result$[i].login}}
+</div>
 
-{{result$[0].login}}
-{{result$[1].name}}
-<img src="{{result$[0].avatar_url}}" class="img-circle img-responsive" alt="{{result$[0].login}}">
+<img src="{{result$[i].avatar_url}}" class="img-circle img-responsive" alt="{{result$[i].login}}">
+<div class="card-footer bg-dark text-white" id="header">
+  Github ID:{{result$[i].id}}
+</div>
+</div>
+<br>
+</div>

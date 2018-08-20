@@ -22,3 +22,22 @@ input{
   background-color:green;
   cursor: pointer;
 }
+img {
+  border-radius: 100%;
+  height: 50%;
+  width: 50%;
+  margin-left: 200px;
+
+}
+#header{
+  text-align: center;
+}
+.card{
+  background-color: navy;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
