@@ -6,13 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
-import { LandingComponent } from './landing/landing.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FindComponent } from './find/find.component';
 
 
 const routes: Routes = [
-  {path: 'landing', component: LandingComponent},
+  {path: 'find', component: FindComponent},
   {path: 'search', component: SearchComponent}
 ];
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     SearchComponent,
-    LandingComponent,
+    FindComponent,
 
 
   ],

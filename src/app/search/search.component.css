@@ -23,8 +23,23 @@ input{
   cursor: pointer;
 }
 a{
-  color: white;
+  color:black;
 }
 img {
-  border-radius: 50%;
+  border-radius: 20%;
+}
+.repos{
+text-align: center;
+padding-left: 300px;
+}
+.card{
+  width: 300px;
+
+}
+button{
+  width:100px;
+  margin-left: 100px;
+}
+.col-md-6{
+padding-left: 300px;
 }
