@@ -1,7 +1,7 @@
 
 
 <div class="head">
-<input class="input" type="text" placeholder="Search here..." name="input" #input value="">
+<input class="input" type="text" placeholder="Search here..." name="input" #input value="" (keyup)="search(input)">
 
 <input class="click"  type="button" (click)='search(input)' value="search">
 </div>
