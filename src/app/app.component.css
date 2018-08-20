@@ -13,16 +13,10 @@ a{
 
 #navbar a:hover {
   background-color:black;
-  color:white;
+  color:lightgreen;
 }
 
 #navbar a.active {
-  background-color:navy;
-  color: white;
-}
-a{
-  color: navy;
-}
-#navbar{
-  border-radius: 30%;
+  background-color:black;
+  color: lightgreen;
 }
