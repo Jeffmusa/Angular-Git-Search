@@ -1,3 +1,5 @@
+
+
 <h2>{{user$.name|uppercase}}<small>({{user$.login}})</small></h2>
 
 <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
@@ -6,7 +8,7 @@
 <div class="repos" *ngFor= "let repo of repo$, let i = index">
   <div class="card">
     <div class="card-header">
-    <h4>{{repo$[i].name}}</h4>  
+    <h4>{{repo$[i].name}}</h4>
     </div>
     <button class="btn btn-primary"><a href='https://github.com/jeffmusa/{{repo$[i].name}}'>VIEW REPO</a></button>
   </div>
