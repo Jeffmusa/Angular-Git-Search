@@ -8,24 +8,22 @@
 
 
 
-<div class="row">
-  <div class="col-md-6">
   <h1>{{user$.name}}<small>({{user$.login}})</small></h1>
-<span class="label label-default">{{user$.public_repos}} Public Repos.</span>
+
 <img src="{{user$.avatar_url}}" class="img-circle img-responsive" alt="{{user$.login}}">
-</div>
-<h1 style="text-align:center;">PUBLIC REPOSITORIES</h1>
+
+<h1 style="text-align:center;">PUBLIC REPOSITORIES<small class="label label-default"><em>({{user$.public_repos}} Public Repos.)</em></small></h1>
 <div class="repos" *ngFor= "let repo of repo$, let i = index">
   <div class="card">
     <div class="card-header">
       {{repo$[i].name}}
     </div>
-    <button class="btn btn-primary"><a href='https://github.com/jeffmusa/{{repo$[i].name}}'>LIVE SITE</a></button>
+    <button class="btn btn-primary"><a href='https://github.com/jeffmusa/{{repo$[i].name}}'>VIEW REPO</a></button>
   </div>
 
   <br>
 </div>
-</div>
+
 
 
       {{result$[0].login}}

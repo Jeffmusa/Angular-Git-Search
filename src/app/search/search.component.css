@@ -24,22 +24,33 @@ input{
 }
 a{
   color:black;
+  text-decoration: none;
 }
 img {
   border-radius: 20%;
 }
 .repos{
 text-align: center;
-padding-left: 300px;
+padding-left: 400px;
+
 }
 .card{
   width: 300px;
 
+  padding: 20px;
+
 }
-button{
+.card-header{
+  background-color: lightgreen;
+
+}
+ button{
   width:100px;
-  margin-left: 100px;
+  margin-left: 90px;
+  margin-top: 20px;
 }
-.col-md-6{
-padding-left: 300px;
-}
+
+ button:hover{
+   background-color:green;
+   transition: 0.6s;
+ }
