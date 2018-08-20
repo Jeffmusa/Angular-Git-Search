@@ -6,7 +6,7 @@
 <div class="repos" *ngFor= "let repo of repo$, let i = index">
   <div class="card">
     <div class="card-header">
-      {{repo$[i].name}}
+    <h4>{{repo$[i].name}}</h4>  
     </div>
     <button class="btn btn-primary"><a href='https://github.com/jeffmusa/{{repo$[i].name}}'>VIEW REPO</a></button>
   </div>
