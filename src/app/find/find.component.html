@@ -5,16 +5,14 @@
 
 <input class="click"  type="button" (click)='search(input)' value="search">
 </div>
-<div *ngFor= "let result of result$, let i = index">
   <div class="card">
     <div class="card-header bg-secondary text-white" id="header">
-{{result$[i].login}}
+User name:{{result$.login}}
 </div>
 
-<img src="{{result$[i].avatar_url}}" class="img-circle img-responsive" alt="{{result$[i].login}}">
+<img src="{{result$.avatar_url}}" class="img-circle img-responsive" alt="{{result$.login}}">
 <div class="card-footer bg-dark text-white" id="header">
-  Github ID:{{result$[i].id}}
+  Github ID:{{result$.id}}
 </div>
 </div>
 <br>
-</div>

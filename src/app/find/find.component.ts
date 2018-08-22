@@ -14,8 +14,8 @@ export class FindComponent implements OnInit {
 
   constructor(public service: ServiceService, private http: HttpClient ) { }
   search(input) {
-    this.http.get('https://api.github.com/search/users?q=' + input.value).subscribe( data => {
-      this.result$ = data.items;
+    this.http.get('https://api.github.com/users/' + input.value).subscribe( data => {
+      this.result$ = data;
       console.log(data);
     });
   }

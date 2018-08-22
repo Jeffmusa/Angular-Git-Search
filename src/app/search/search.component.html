@@ -6,12 +6,18 @@
 
 <h3 style="text-align:center;">PUBLIC REPOSITORIES<small class="label label-default"><em>({{user$.public_repos}} Public Repos.)</em></small></h3>
 <div class="repos" *ngFor= "let repo of repo$, let i = index">
+  .<div class="row">
+
+
   <div class="card">
     <div class="card-header">
     <h4>{{repo$[i].name}}</h4>
     </div>
+      <div class="card-footer">
+        <p>{{repo$[i].description}}</p>
+        </div>
     <button class="btn btn-primary"><a href='https://github.com/jeffmusa/{{repo$[i].name}}'>VIEW REPO</a></button>
   </div>
-
+  </div>
   <br>
 </div>
