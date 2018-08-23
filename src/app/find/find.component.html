@@ -11,8 +11,15 @@ User name:{{result$.login}}
 </div>
 
 <img src="{{result$.avatar_url}}" class="img-circle img-responsive" alt="{{result$.login}}">
+
 <div class="card-footer bg-dark text-white" id="header">
   Github ID:{{result$.id}}
 </div>
+</div>
+
+
+<div  class="repos" *ngFor= "let repo of show$, let i = index">
+<p>{{show$[i].name}}</p>
+
 </div>
 <br>

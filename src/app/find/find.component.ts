@@ -11,11 +11,15 @@ import 'rxjs/add/operator/map';
 })
 export class FindComponent implements OnInit {
   result$: any;
-
+  show$;
   constructor(public service: ServiceService, private http: HttpClient ) { }
   search(input) {
     this.http.get('https://api.github.com/users/' + input.value).subscribe( data => {
       this.result$ = data;
+      console.log(data);
+    });
+    this.http.get('https://api.github.com/users/' + input.value + '/repos') .subscribe(data => {
+      this.show$ = data;
       console.log(data);
     });
   }
