@@ -32,7 +32,7 @@ img {
 #header{
   text-align: center;
 }
-.card{
+#avatar{
   background-color: navy;
 }
 
@@ -40,4 +40,32 @@ img {
 #navbar {
   overflow: hidden;
   background-color: #333;
+}
+.well{
+  background-color:black;
+}
+#hold{
+  width: 400px;
+  padding: 20px;
+
+}
+a{
+   text-decoration: none;
+color: black;
+  }
+button{
+ width:100px;
+ margin-left: 130px;
+ margin-top: 20px;
+
+}
+
+.repos{
+text-align: center;
+padding-left: 400px;
+}
+.card-header{
+  background-color:black;
+  color: white;
+
 }

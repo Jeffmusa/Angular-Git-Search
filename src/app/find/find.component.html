@@ -5,7 +5,7 @@
 
 <input class="click"  type="button" (click)='search(input)' value="search">
 </div>
-  <div class="card">
+  <div class="card" id="avatar">
     <div class="card-header bg-secondary text-white" id="header">
 User name:{{result$.login}}
 </div>
@@ -16,10 +16,24 @@ User name:{{result$.login}}
   Github ID:{{result$.id}}
 </div>
 </div>
+<h3 style="text-align:center;">REPOSITORIES</h3>
+<div style="text-align:center;" class="well">
 
 
 <div  class="repos" *ngFor= "let repo of show$, let i = index">
-<p>{{show$[i].name}}</p>
+  <br>
+  <div class="card" id="hold">
 
+.<div class="card-header">
+  <h4>{{show$[i].name}}</h4>
 </div>
-<br>
+<div class="card-footer">
+  <p>{{show$[i].description}}</p>
+</div>
+
+
+<button class="btn btn-success"><a href='https://github.com/{{result$.login}}/{{show$[i].name}}'>VIEW REPO</a></button>
+  </div>
+  <br>
+</div>
+</div>
